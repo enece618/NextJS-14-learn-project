@@ -36,5 +36,6 @@ jobs:
           POSTGRES_HOST: ${{ secrets.POSTGRES_HOST }}
           POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
           POSTGRES_DATABASE: ${{ secrets.POSTGRES_DATABASE }}
+          AUTH_SECRET: ${{ secrets.AUTH_SECRET }}
 
       - run: npm run lint
